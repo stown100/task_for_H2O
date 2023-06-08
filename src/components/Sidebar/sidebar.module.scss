@@ -1,0 +1,36 @@
+.Nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  background: linear-gradient(180deg, #54d3c2 0%, #30898a 100%);
+  border-radius: 56px 56px 0px 56px;
+  max-width: 127px;
+  min-height: 928px;
+  height: 100%;
+  align-items: center;
+  padding: 55px 0 65px;
+  gap: 46px;
+  &Item {
+    padding: 11px 11px 9px;
+    border-radius: 16px;
+    &Active {
+      background: rgba(169, 233, 224, 0.75);
+    }
+  }
+}
+
+.Logo {
+  margin: 0 0 85px;
+  padding: 0 32px 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .Nav {
+    width: 100px;
+  }
+  .Logo {
+    padding: 0 17px;
+    margin: 0 0 65px;
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../sass/variables.scss";
+
+.Search {
+  background-color: #ffffff;
+  padding: 38px 36px 41px;
+  border-radius: 32px;
+  margin: 0 0 81px;
+  display: flex;
+  justify-content: space-between;
+  &Content {
+    display: flex;
+    align-items: center;
+    &Count {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 44px;
+      letter-spacing: -0.56px;
+      color: #54d3c2;
+      margin: 0 14px 0 0;
+    }
+    &Text {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 44px;
+      letter-spacing: -0.56px;
+      margin: 0 39px 0 0;
+    }
+    &Input {
+      background: #f8f8f8;
+      border-radius: 24px;
+      padding: 9px 20px;
+      border: none;
+      min-width: 360px;
+      &::placeholder {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        align-items: center;
+        color: #989fa3;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:active {
+        outline: none;
+      }
+    }
+  }
+  &Button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.56px;
+    color: #54d3c2;
+    padding: 12px 16px;
+    border: 1.5px solid #54d3c2;
+    border-radius: 24px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      border: 1.5px solid $greeb-text-color;
+      color: $greeb-text-color;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .Search {
+    margin: 0 0 31px;
+  }
+}

@@ -1,0 +1,44 @@
+.User {
+  display: flex;
+  align-items: center;
+  &Avatar {
+    width: 56px;
+    height: 56px;
+    margin: 0 23px 0 0;
+  }
+  &Info {
+    margin: 0 143px 0 0;
+    &Name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.44px;
+      margin: 0;
+    }
+    &Description {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.15px;
+      color: #989fa3;
+      margin: 0;
+    }
+  }
+  &Arrow {
+    width: 16px;
+    height: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &_active {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .User {
+    &Info {
+      margin: 0 100px 0 0;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.Main {
+  margin: 0 0 0 127px;
+  padding: 27px 40px 65px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  &Title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #323f47;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .Main {
+    margin: 0 0 0 100px;
+    padding: 27px 20px 65px;
+  }
+}

@@ -1,0 +1,21 @@
+.Pagination {
+  justify-content: center;
+  margin: 22px 0 0;
+  & > li {
+    & > :only-child {
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.22px;
+      color: #323f47;
+    }
+    & > span {
+      color: #54d3c2 !important;
+      background-color: rgba(0, 0, 0, 0) !important;
+      & > span {
+        color: #323f47 !important;
+      }
+    }
+  }
+}

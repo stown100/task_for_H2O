@@ -1,0 +1,55 @@
+.Nav {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-bottom: 1.5px solid #d2d1d1;
+  margin: 0 77px 0 0;
+  white-space: nowrap;
+  padding: 0 0 14px;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  &Items {
+    display: flex;
+    flex-direction: row;
+    max-width: 752px;
+    max-height: 40px;
+  }
+  &Item {
+    margin: 0 20px 0 0;
+    &_active {
+      border-bottom: 4.5px solid #54d3c2;
+      margin: 0 20px -14px 0;
+    }
+    &Link {
+      padding: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.44px;
+      color: #d2d1d1;
+      &:hover {
+        color: #b1b1b1;
+      }
+      &:active {
+        color: #b1b1b1;
+      }
+      &:focus {
+        color: #323f47;
+      }
+      &_active {
+        font-weight: 700;
+        color: #323f47;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .Nav {
+    &Items {
+      max-width: 500px;
+    }
+  }
+}
